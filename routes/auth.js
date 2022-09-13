@@ -119,8 +119,9 @@ router.get('/oauth2/redirect/google', passport.authenticate('google', {
  * This route logs the user out.
  */
 router.post('/logout', function(req, res, next) {
-  req.logout();
-  res.redirect('/');
+  req.logout(function(err) {  // do this
+    if (err) { return next(err); }// do this
+    res.redirect('/');
+  });
 });
-
 module.exports = router;
