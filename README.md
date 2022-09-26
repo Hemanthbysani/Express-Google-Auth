@@ -9,8 +9,8 @@ Use this example as a starting point for your own web applications.
 To run this app, clone the repository and install dependencies:
 
 ```bash
-$ git clone 
-$ cd todos-express-google-oauth2
+$ git clone https://github.com/Hemanthbysani/Express-Google-Auth
+$ cd Express-Google-Auth
 $ npm install
 ```
 
@@ -23,16 +23,16 @@ Once credentials have been obtained, create a `.env` file and add the following
 environment variables:
 
 ```
-GOOGLE_CLIENT_ID=__INSERT_CLIENT_ID_HERE__
-GOOGLE_CLIENT_SECRET=__INSERT_CLIENT_SECRET_HERE__
+GOOGLE_CLIENT_ID= <INSERT_CLIENT_ID_HERE>
+GOOGLE_CLIENT_SECRET=<INSERT_CLIENT_ID_SECRET_HERE>
 ```
 
-Start the server.
+Start the server using.
 
 ```bash
 $ npm start
 ```
-
+And then
 Navigate to [`http://localhost:3000`](http://localhost:3000).
 
 ## Overview
@@ -60,4 +60,4 @@ authenticating the session.
 
 ## Credit
 
-Created by [Jared Hanson](https://www.jaredhanson.me/)
+This repository was inspired by the author's work [Jared Hanson](https://www.jaredhanson.me/)
